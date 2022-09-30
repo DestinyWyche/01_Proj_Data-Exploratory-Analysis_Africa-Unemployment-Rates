@@ -39,7 +39,7 @@ For this project, I explored a Kaggle dataset on unemployment rates for countrie
  ### Analyzing the data
  
  - data was analyzed using **Bigquery** and **Rstudio cloud**
- - in Bigquery, two queries were written (can be viewed in file 06)
+ - in Bigquery, two queries were written (**can be viewed in file 06**)
      - query to find top 3 unemployment rates for each year
         - tried to use the same idea of a subquery to find the top three unemployment rates for each year
           - this was not giving me the results I wanted and I was consistently running into circles
