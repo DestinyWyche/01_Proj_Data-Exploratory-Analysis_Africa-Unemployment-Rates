@@ -33,21 +33,24 @@ For this project, I explored a Kaggle dataset on unemployment rates for countrie
     6. saving stacked data sheet as clean data csv file
         - this is the data that will be used for analysis  
 
-**This process can be looked at in file 02**
+**This process can be viewed in file 02**  
+**Results can be viewed in file 03**
  
  ### Analyzing the data
  
  - data was analyzed using **Bigquery** and **Rstudio cloud**
- - in Bigquery, two queries were written
+ - in Bigquery, two queries were written (can be viewed in file 06)
+     - query to find top 3 unemployment rates for each year
+        - tried to use the same idea of a subquery to find the top three unemployment rates for each year
+          - this was not giving me the results I wanted and I was consistently running into circles
+        - decided that I maybe had to do brute force and write a query for each year, however this was repetitive so I knew there must of been a way to automate this process
+        - did some research online and found others who were dealing with a similar problem, and this is where I was introducted to the row_number() function
+        - used the row_number function to find the top three unemployment rates for each year    
+  **Results can be viewed in file 04** 
    - query to find mean unemployment rate for each year
       - subquery was written to find the maximum unemployment rate for each year
-        - then outer query returned the country and year for each of these unemployment rates
-    - query to find top 3 unemployment rates for each year
-      - tried to use the same idea of a subquery to find the top three unemployment rates for each year
-        - this was not giving me the results I wanted and I was consistently running into circles
-      - decided that I maybe had to do brute force and write a query for each year, however this was repetitive so I knew there must of been a way to automate this process
-      - did some research online and found others who were dealing with a similar problem, and this is where I was introducted to the row_number() function
-      - used the row_number function to find the top three unemployment rates for each year  
-        
+        - then outer query returned the country and year for each of these unemployment rates  
+**Results can be viewed in file 05**   
+ 
   - in RStudio cloud: created two visualizations to answer my two questions  
-  **This can be looked at in file 07**
+  **This can be viewed in file 07**
