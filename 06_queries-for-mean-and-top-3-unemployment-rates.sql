@@ -1,4 +1,4 @@
--- finding max. unemployment rate each year
+-- finding mean unemployment rate each year
 
 SELECT
       Year,
