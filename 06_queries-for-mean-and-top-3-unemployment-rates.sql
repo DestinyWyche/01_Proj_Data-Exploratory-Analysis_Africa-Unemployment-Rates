@@ -1,20 +1,12 @@
 -- finding max. unemployment rate each year
 
-SELECT 
-  Country
-  ,Year
-  ,Unemployment_rate
-FROM 
-  `africa-unemployment-rates.africa.unemployment_rates` 
-WHERE
-  Unemployment_rate IN (
-    SELECT
-      MAX(Unemployment_rate)
+SELECT
+      Year,
+      AVG(Unemployment_rate) as mean_unemployment_rate
     FROM
         `africa-unemployment-rates.africa.unemployment_rates` 
     GROUP BY
       Year
-  )
 
 -- find top 3 unemployment rates each year
 
