@@ -3,9 +3,9 @@
 SELECT
       Year,
       AVG(Unemployment_rate) as mean_unemployment_rate
-    FROM
-        `africa-unemployment-rates.africa.unemployment_rates` 
-    GROUP BY
+FROM
+      `africa-unemployment-rates.africa.unemployment_rates` 
+GROUP BY
       Year
 
 -- find top 3 unemployment rates each year
