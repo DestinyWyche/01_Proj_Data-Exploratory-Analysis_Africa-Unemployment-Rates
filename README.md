@@ -2,7 +2,7 @@
 
 ## Purpose of Project
 
-For this project, I explored a Kaggle dataset on unemployment rates for countries around the world from the year 1990-2021. I noticed there was a vast amount of data so I decided to focus on gaining insights from one continent
+For this project, I explored a Kaggle dataset on unemployment rates for countries in Africa from the year 1990-2021. Then, I gained insights on two key questions using **Excel, BigQuery, and RStudio Cloud**
 
 ## Data Analysis Process
 
